@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class Servicio
+    public abstract class Servicio
     {
     }
 }
