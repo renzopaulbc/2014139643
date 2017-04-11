@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    public abstract class Servicio
+   public class Empleado
     {
-
+        public String Nombre { get; set; }
+        public String Apellido { get; set; }
     }
 }
