@@ -1,0 +1,6 @@
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\bin\Debug\EmpresaTransporte.exe.config
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\bin\Debug\EmpresaTransporte.exe
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\bin\Debug\EmpresaTransporte.pdb
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\obj\Debug\EmpresaTransporte.csprojResolveAssemblyReference.cache
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\obj\Debug\EmpresaTransporte.exe
+C:\Users\Renzo\Documents\Visual Studio 2017\Projects\2014139643\EmpresaTransporte\EmpresaTransporte\obj\Debug\EmpresaTransporte.pdb
