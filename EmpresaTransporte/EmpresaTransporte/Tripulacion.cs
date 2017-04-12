@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-   public class Tripulacion:Empleado
+    class Tripulacion : Empleado
     {
-        public int NumeroTripulantes { get; set; }
+        TipoTripulacion tipoTripulacion;
+        int nroViajesMax;
+        Boolean estado;
+
+        public Tripulacion(int id, String nombre, String apellido, String correo, decimal sueldo, TipoTripulacion tipoTripulacion, int nroViajesMax)
+            : base(id, nombre, apellido, correo, sueldo)
+        {
+            this.tipoTripulacion = tipoTripulacion;
+            this.nroViajesMax = nroViajesMax;
+            this.estado = true;
+        }
     }
 }
+
+

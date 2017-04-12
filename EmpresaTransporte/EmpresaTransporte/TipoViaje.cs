@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmpresaTransporte
-{
-    public class TipoViaje
-    {
-        public string Categoria { get; set; }
 
-        public string FechaViaje { get; set; }
+
+    namespace EmpresaTransporte
+    {
+        class TipoViaje
+        {
+            public String nombre { get; set; }
+            public String descripcion { get; set; }
+        }
     }
-}
