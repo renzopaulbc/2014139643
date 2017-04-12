@@ -9,8 +9,8 @@ namespace EmpresaTransporte
     
       public abstract class Servicio
         {
-            public DateTime fechaPartida { get; set; }
-            public DateTime fechaLlegada { get; set; }
+            public  DateTime fechaPartida { get; set; }
+            public  DateTime fechaLlegada { get; set; }
 
         }
     }

@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class Encomienda : Servicio
+   public  class Encomienda : Servicio
     {
+      
         LugarViaje destino;
         Bus bus;
+   public Encomienda (LugarViaje destino,Bus bus) 
+        {
+            this.destino = destino;
+            this.bus = bus;
+        }
+
     }
+
 }
 

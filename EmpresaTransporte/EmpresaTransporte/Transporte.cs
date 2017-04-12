@@ -7,13 +7,21 @@ using System.Threading.Tasks;
 namespace EmpresaTransporte
 {
     
-        class Transporte : Servicio
+       public class Transporte : Servicio
         {
-            Bus bus;
+   
+
+        Bus bus;
             TipoViaje tipoViaje;
             Cliente cliente;
             LugarViaje destino;
+        public Transporte (TipoViaje tipoViaje, Cliente cliente, LugarViaje destino)
+        {
+            this.tipoViaje = tipoViaje;
+            this.cliente = cliente;
+            this.destino = destino;
         }
+    }
     }
 
 

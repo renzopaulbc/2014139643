@@ -8,9 +8,16 @@ using System.Threading.Tasks;
 
     namespace EmpresaTransporte
     {
-        class TipoViaje
+       public  class TipoViaje
         {
             public String nombre { get; set; }
             public String descripcion { get; set; }
+
+        public TipoViaje(String nombre,String descripcion)  
+        {
+             this.nombre=nombre;
+            this.descripcion = descripcion;
         }
+        }
+
     }

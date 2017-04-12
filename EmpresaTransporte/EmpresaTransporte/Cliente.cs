@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class Cliente
+    public class Cliente
     {
         public int dni { get; set; }
         public String nombres { get; set; }

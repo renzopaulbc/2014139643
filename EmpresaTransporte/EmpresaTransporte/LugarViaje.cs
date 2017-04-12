@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class LugarViaje
+    public class LugarViaje
     {
         TipoLugar tipoLugar;
         String nombreLugar;

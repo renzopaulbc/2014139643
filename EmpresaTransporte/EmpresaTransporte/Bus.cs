@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class Bus
+  public  class Bus
     {
         List<Tripulacion> listaTripulacion;
         public string NroPlaca { get; set; }
