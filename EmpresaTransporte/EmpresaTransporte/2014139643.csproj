@@ -42,10 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrativo.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicio.cs" />
+    <Compile Include="TipoComprobante.cs" />
+    <Compile Include="TipoPago.cs" />
+    <Compile Include="TipoTripulacion.cs" />
+    <Compile Include="TipoViaje.cs" />
+    <Compile Include="Tripulacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
