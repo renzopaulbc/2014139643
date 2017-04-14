@@ -8,7 +8,7 @@ namespace EmpresaTransporte
 {
     public class Program
     {
-        int opcion = -1;
+      
         static void Main(string[] args)
         {
             // TipoTripulacion
@@ -50,11 +50,11 @@ namespace EmpresaTransporte
 
             // Ventas (3 Pasajes y 2 Encomiendas)
             List<Venta> listaVentas = new List<Venta>();
-            Venta pasaje1 = new Venta(1, admin1, cliente1, boleta, new Transporte(1, bus1, normal, cliente1, limaDestino, "22/03/17", "23/03/17"), efectivo, "20/03/17");
-            Venta pasaje2 = new Venta(2, admin1, cliente2, boleta, new Transporte(2, bus1, normal, cliente2, limaDestino, "22/03/17", "23/03/17"), efectivo, "21/03/17");
-            Venta pasaje3 = new Venta(3, admin1, cliente3, boleta, new Transporte(3, bus1, normal, cliente3, limaDestino, "22/03/17", "23/03/17"), efectivo, "21/03/17");
-            Venta encomienda1 = new Venta(4, admin2, cliente4, factura, new Encomienda(1, limaDestino, bus1, "Una bomda nuclear", "22/03/17", "23/03/17"), tarjeta, "20/03/17");
-            Venta encomienda2 = new Venta(5, admin2, cliente5, factura, new Encomienda(2, limaDestino, bus1, "Una caja de zapatos", "22/03/17", "23/03/17"), tarjeta, "21/03/17");
+            Venta pasaje1 = new Venta(1, admin1, cliente1, boleta, new Transporte(1, bus1, normal, cliente1, limaDestino, "22/03/17", "23/03/17"), efectivo, "20/03/17",normal);
+            Venta pasaje2 = new Venta(2, admin1, cliente2, boleta, new Transporte(2, bus1, normal, cliente2, limaDestino, "22/03/17", "23/03/17"), efectivo, "21/03/17",vip);
+            Venta pasaje3 = new Venta(3, admin1, cliente3, boleta, new Transporte(3, bus1, normal, cliente3, limaDestino, "22/03/17", "23/03/17"), efectivo, "21/03/17",normal);
+            Venta encomienda1 = new Venta(4, admin2, cliente4, factura, new Encomienda(1, limaDestino, bus1, "Una bomda nuclear", "22/03/17", "23/03/17"), tarjeta, "20/03/17",vip);
+            Venta encomienda2 = new Venta(5, admin2, cliente5, factura, new Encomienda(2, limaDestino, bus1, "Una caja de zapatos", "22/03/17", "23/03/17"), tarjeta, "21/03/17",normal);
 
             listaVentas.Add(pasaje1);
             listaVentas.Add(pasaje2);
@@ -66,6 +66,7 @@ namespace EmpresaTransporte
             {
                 Console.WriteLine("Venta " + venta.id);
                 venta.info();
+               
                 Console.WriteLine("==========================");
             }
         }

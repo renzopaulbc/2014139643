@@ -16,7 +16,7 @@ namespace EmpresaTransporte
         public String Correo { get; set; }
         public int telefono { get; set; }
 
-        public Cliente(int dni, String nomb, String apellidos, int edad, char sexo, String correo, int telefono)
+        public Cliente(int dni, String nombres, String apellidos, int edad, char sexo, String correo, int telefono)
         {
             this.dni = dni;
             this.nombres = nombres;

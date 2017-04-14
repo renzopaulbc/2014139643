@@ -14,7 +14,8 @@ namespace EmpresaTransporte
         TipoPago tipoPago;
         TipoComprobante tipoComprobante;
 
-        public Venta(int id, Administrativo administratativo, Cliente cliente, TipoComprobante tipoComprobante, Servicio servicio, TipoPago tipoPago, String fechaVenta)
+
+        public Venta(int id, Administrativo administratativo, Cliente cliente, TipoComprobante tipoComprobante, Servicio servicio, TipoPago tipoPago, String fechaVenta,TipoViaje TipoServ)
         {
             this.id = id;
             this.administrativo = administratativo;
@@ -24,8 +25,11 @@ namespace EmpresaTransporte
             this.tipoComprobante = tipoComprobante;
             this.costo = servicio.calcularServicio();
             this.FechaVenta = fechaVenta;
+            this.TipoServ = TipoServ;
+
         }
 
+        public TipoViaje TipoServ { get; set; }
         public int id { get; set; }
         public decimal costo { get; set; }
         public String FechaVenta { get; set; }
@@ -33,7 +37,11 @@ namespace EmpresaTransporte
         public void info()
         {
             Console.WriteLine("ID: " + this.id);
+            Console.WriteLine("Servicio: " + this.servicio);
+            Console.WriteLine("TipoPago: " + this.tipoPago.nombre);
+            Console.WriteLine("TipoServicio: " + this.TipoServ.nombre);
             Console.WriteLine("Nombre Cliente: " + this.cliente.nombres + " " + this.cliente.apellidos);
+
             Console.WriteLine("Precio: " + this.costo);
             Console.WriteLine("Fecha Venta: " + this.FechaVenta);
             Console.WriteLine("Fecha Partida: " + this.servicio.fechaPartida);
