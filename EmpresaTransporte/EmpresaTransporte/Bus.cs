@@ -6,36 +6,40 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-  public  class Bus
-    {
-        List<Tripulacion> listaTripulacion;
-        public string NroPlaca { get; set; }
-        public String Modelo { get; set; }
-        public String Color { get; set; }
-        public decimal Kilometraje { get; set; }
-
-        public Bus(Encomienda encomienda, String nroPlaca, String modelo, String color, decimal kilometraje)
+ 
+        public class Bus
         {
-            this.NroPlaca = nroPlaca;
-            this.Modelo = modelo;
-            this.Color = color;
-            this.Kilometraje = kilometraje;
-            this.listaTripulacion = new List<Tripulacion>();
-        }
+            List<Tripulacion> listaTripulacion;
+            public string NroPlaca { get; set; }
+            public String Modelo { get; set; }
+            public String Color { get; set; }
+            public decimal Kilometraje { get; set; }
 
-        public Encomienda encomienda { get; set; }
+            public Bus(String nroPlaca, String modelo, String color, decimal kilometraje)
+            {
+                this.NroPlaca = nroPlaca;
+                this.Modelo = modelo;
+                this.Color = color;
+                this.Kilometraje = kilometraje;
+                this.listaTripulacion = new List<Tripulacion>();
+            }
 
-        public void AgregarTripulante(Tripulacion tripulacion)
-        {
-            listaTripulacion.Add(tripulacion);
-        }
+            public Encomienda encomienda { get; set; }
 
-        public void RemoverTripulante(Tripulacion tripulacion)
-        {
-            listaTripulacion.Remove(tripulacion);
+            public void AgregarTripulante(Tripulacion tripulacion)
+            {
+                tripulacion.estado = false;
+                listaTripulacion.Add(tripulacion);
+            }
+
+            public void RemoverTripulante(Tripulacion tripulacion)
+            {
+                tripulacion.estado = true;
+                listaTripulacion.Remove(tripulacion);
+            }
         }
     }
-}
+
 
 
 

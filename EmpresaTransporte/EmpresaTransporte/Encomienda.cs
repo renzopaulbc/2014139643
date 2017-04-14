@@ -6,18 +6,30 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-   public  class Encomienda : Servicio
+    public class Encomienda : Servicio
     {
-      
+        int id;
         LugarViaje destino;
         Bus bus;
-   public Encomienda (LugarViaje destino,Bus bus) 
+        String descripcion;
+        decimal precio;
+
+        public Encomienda(int id, LugarViaje destino, Bus bus, String descripcion, String fechaPartida, String fechaLlegada)
         {
+            this.id = id;
             this.destino = destino;
             this.bus = bus;
+            this.descripcion = descripcion;
+            this.precio = destino.costoLugar;
+            this.fechaLlegada = fechaLlegada;
+            this.fechaPartida = fechaPartida;
         }
 
+        public override decimal calcularServicio()
+        {
+            return precio;
+        }
     }
-
 }
+
 

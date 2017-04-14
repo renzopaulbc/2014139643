@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class Venta
+    public class Venta
     {
         Administrativo administrativo;
         Cliente cliente;
@@ -14,21 +14,33 @@ namespace EmpresaTransporte
         TipoPago tipoPago;
         TipoComprobante tipoComprobante;
 
-        public Venta(Administrativo administratativo, Cliente cliente, TipoComprobante tipoComprobante, Servicio servicio, TipoPago tipoPago)
+        public Venta(int id, Administrativo administratativo, Cliente cliente, TipoComprobante tipoComprobante, Servicio servicio, TipoPago tipoPago, String fechaVenta)
         {
+            this.id = id;
             this.administrativo = administratativo;
             this.cliente = cliente;
             this.servicio = servicio;
             this.tipoPago = tipoPago;
             this.tipoComprobante = tipoComprobante;
+            this.costo = servicio.calcularServicio();
+            this.FechaVenta = fechaVenta;
         }
 
         public int id { get; set; }
         public decimal costo { get; set; }
-        public DateTime FechaVenta { get; set; }
+        public String FechaVenta { get; set; }
+
+        public void info()
+        {
+            Console.WriteLine("ID: " + this.id);
+            Console.WriteLine("Nombre Cliente: " + this.cliente.nombres + " " + this.cliente.apellidos);
+            Console.WriteLine("Precio: " + this.costo);
+            Console.WriteLine("Fecha Venta: " + this.FechaVenta);
+            Console.WriteLine("Fecha Partida: " + this.servicio.fechaPartida);
+            Console.WriteLine("Fecha Llegada: " + this.servicio.fechaLlegada);
+        }
 
     }
 
 }
-
 

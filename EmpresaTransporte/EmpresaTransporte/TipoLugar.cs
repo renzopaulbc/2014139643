@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    class TipoLugar
+    public class TipoLugar
     {
         public String nombre { get; set; }
         public String descripcion { get; set; }
+        public decimal costoTipoLugar { get; set; }
 
-        public TipoLugar(String nombre, String descripcion)
+        public TipoLugar(String nombre, String descripcion, decimal costoTipoLugar)
         {
             this.nombre = nombre;
             this.descripcion = descripcion;
+            this.costoTipoLugar = costoTipoLugar;
         }
     }
 }
+
 

@@ -26,6 +26,5 @@ namespace EmpresaTransporte
             this.Correo = correo;
             this.telefono = telefono;
         }
-
     }
 }

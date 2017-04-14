@@ -8,10 +8,6 @@ namespace EmpresaTransporte
 {
     public class Administrativo : Empleado
     {
-
-        
-
-
         public String area { get; set; }
         public String horaInicio { get; set; }
         public String horaFin { get; set; }
@@ -26,5 +22,3 @@ namespace EmpresaTransporte
 
     }
 }
-
-

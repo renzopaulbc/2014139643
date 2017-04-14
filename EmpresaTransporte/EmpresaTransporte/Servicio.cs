@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-    
-      public abstract class Servicio
-        {
-            public  DateTime fechaPartida { get; set; }
-            public  DateTime fechaLlegada { get; set; }
 
-        }
+    public abstract class Servicio
+    {
+        public String fechaPartida { get; set; }
+        public String fechaLlegada { get; set; }
+        public abstract decimal calcularServicio();
+
     }
+}
+

@@ -11,10 +11,13 @@ namespace EmpresaTransporte
         TipoLugar tipoLugar;
         String nombreLugar;
 
-        public LugarViaje(TipoLugar tipoLugar, String nombreLugar)
+        public LugarViaje(TipoLugar tipoLugar, String nombreLugar, decimal costoBase)
         {
             this.nombreLugar = nombreLugar;
             this.tipoLugar = tipoLugar;
+            this.costoLugar = costoBase + tipoLugar.costoTipoLugar;
         }
+        public decimal costoLugar { get; set; }
     }
 }
+

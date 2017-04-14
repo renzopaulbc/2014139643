@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpresaTransporte
 {
-   public  class TipoComprobante
+    public class TipoComprobante
     {
         public String nombre { get; set; }
         public String descripcion { get; set; }
@@ -19,4 +19,5 @@ namespace EmpresaTransporte
 
     }
 }
+
 

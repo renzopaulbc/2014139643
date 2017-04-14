@@ -9,6 +9,7 @@ namespace EmpresaTransporte
    public class TipoPago
     {
         public String nombre { get; set; }
+
         public String descripcion { get; set; }
 
         public TipoPago(String nombre, String descripcion)
